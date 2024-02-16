@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
             Score++;
             SetScoreText();
 
-            if(Score > 3)
+            if(Score > 14)
             {
                 Wall.gameObject.SetActive(false);
             }
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         ScoreText.text = "Score: " + Score.ToString();
 
-        if( Score >= 5)
+        if( Score >= 22)
         {
             WinText.text = "R or ESC";
         }
